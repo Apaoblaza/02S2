@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  height: 2.5rem;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+aside {
+  grid-area: aside;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+aside h1 {
+  margin: 0;
+}
+aside ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+main {
+  grid-area: main;
+  padding-right: 5rem;
+}
+
+.grid-container-1 {
+  display: grid;
+  grid-template-areas: "aside main main main main";
+  grid-template-columns: 1fr 5fr;
+}
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  padding-top: 2rem;
+}
+
+item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
